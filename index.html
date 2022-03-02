@@ -39,19 +39,19 @@
     
     picks = picks.sort(function(a, b){return a - b});
     
-    document.getElementById("div2").innerHTML = "Your sorted picks are: " +
+    document.getElementById("div2").innerHTML = "Sorted Picks: " +
     picks[0] + ",  " + picks[1] + ",  " + picks[2] + ",  " + picks[3] + 
     ",  " + picks[4];
     
     document.getElementById("div3").innerHTML = 
     "Your lucky lucky ball number is: " + luckyNum;
     
-    document.getElementById("div4").innerHTML = "The winning numbers are: " +
+    document.getElementById("div4").innerHTML = "Winning Numbers: " +
     key[0] + ",  " + key[1] + ",  " + key[2] + ",  " + key[3] + 
     ",  " + key[4];
 
     document.getElementById("div5").innerHTML = 
-    "The winning lucky ball number is: " + luckyKey;
+    "Winning lucky ball number is: " + luckyKey;
 
     for(i = 0; i < picks.length; i++)
     {
@@ -62,51 +62,40 @@
             }
         }
     }
-    
     payout = 0;
     if(luckyNum == luckyKey)
     {
-        if(counter == 0)
-        {
+        if(counter == 0){
             payout = 4;
         }
-        if(counter == 1)
-        {
+        if(counter == 1){
             payout = 6;
         }
-        if(counter == 2) 
-        {
+        if(counter == 2) {
             payout = 25;
         }
-        if(counter == 3)
-        {
+        if(counter == 3){
             payout = 150;
         }
-        if(counter == 4)
-        {
+        if(counter == 4){
             payout = 5000;
         }
-        if(counter == 5)
-        {
+        if(counter == 5){
             payout = 7000;
         }
     }
     else 
     {
-        if(counter == 2) 
-        {
+        if(counter == 2) {
             payout = 3;
         }
-        if(counter == 3)
-        {
+        if(counter == 3){
             payout = 20;
         }
-        if(counter == 4)
-        {
+        if(counter == 4){
             payout = 200;
         }
-        if(counter == 5)
-        {
+        if(counter == 5){
             payout = 25000;
         }
     }
@@ -114,23 +103,19 @@
     document.getElementById("div6").innerHTML = 
     "Your number of matches with the winning numbers: " + counter;
     
-    if(luckyNum == luckyKey)
-    {
+    if(luckyNum == luckyKey){
         document.getElementById("div7").innerHTML = 
         "Your lucky ball number matches!";
-        if(counter == 5)
-        {
+        if(counter == 5){
             document.getElementById("payout").innerHTML = 
             "Your payout is: $" + payout + " a WEEK for LIFE!";
         }
-        else 
-        {
+        else {
             document.getElementById("payout").innerHTML = 
             "Your payout is: $" + payout;
         }
     }
-    else 
-    {
+    else {
         document.getElementById("div7").innerHTML = 
         "Your lucky ball number did not match.";
         if(counter == 5)
@@ -138,17 +123,12 @@
             document.getElementById("payout").innerHTML = 
             "Your payout is: $" + payout + " a YEAR for LIFE!";
         }
-        else
-        {
+        else{
             document.getElementById("payout").innerHTML = 
             "Your payout is: $" + payout;
         }
         
     }
-    
-    
-    
-    
     </script>
 </body>
 </html>
