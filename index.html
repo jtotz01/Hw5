@@ -16,7 +16,7 @@
 		<div id = "div5"></div>
 	</div>
 	<script type="text/javascript">
-		var arr1 = prompt("Please Write 5 Numbers (1 - 48)");
+		var arr1 = prompt("Enter 5 Numbers (1 - 48)");
 		var arr2 = arr1.split(' ');
 		var arr2 = arr2.sort(function(a, b) {
   			return a - b;
@@ -24,7 +24,7 @@
 		var arr3 = arr2; 
 		
 		
-		var ball = prompt("Please Write a Lucky Ball Number (1 - 18)");
+		var ball = prompt("Enter a Lucky Ball Number (1 - 18)");
 		var random_ball = Math.floor(Math.random() * 17 + 1);
 		
 		var num = Array.from({length: 5}, () => Math.floor(Math.random() * 47 + 1));
